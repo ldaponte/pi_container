@@ -1,0 +1,3 @@
+{
+    "docker.commands.run": "docker run -d -p 3737:80 nginx-test:1.0.0"
+}
