@@ -1,4 +1,5 @@
-# Using Raspberry Pi + Docker for Home Assistant Work
+# Using Raspberry Pi + Docker for Home Automation
+- note #0 I've consolidated several web sites by other authors and have provided links to their content - they did the hard work
 - note #1 we will be accessing the Raspberry Pi from a client laptop/computer to publish and maintain any docker images you deploy.  Docker will be running on the Pi but you will also want docker on the client so that you have all the docker commands available
   - [Installing Docker Desktop on Mac or Windows](https://www.docker.com/products/docker-desktop/)
 - note #2 you will want to create an image of your Pi SD card after everything is working so you have a clean backup in case you need to start over.
