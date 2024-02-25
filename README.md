@@ -168,7 +168,7 @@
         ```
 
 
-    * Enter the following at the command prompt:
+    * Enter the following at the command prompt on the client machine:
         ``` console
         $ docker image build --tag nginx-test:1.0.0 --file ./Dockerfile .
         ```
