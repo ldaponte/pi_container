@@ -19,10 +19,6 @@ RUN npm install && npm run build
 RUN make build
 
 #clean up build prereqs
-RUN apk del -r curl wget git make gcc patchelf libc-dev 
-
-#copy star files
-RUN mkdir /star
-COPY Star/* /star
+RUN apk del -r curl wget git make gcc patchelf libc-dev
 
 EXPOSE 8080

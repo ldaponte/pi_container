@@ -1,0 +1,3 @@
+- docker build --no-cache -t pixlet_app1  .
+- docker run --rm -it -p 8080:8080 pixlet_app1 pixlet serve /star/text.star -i 0.0.0.0
+- http://homeauto1:8080/?text=Larry
