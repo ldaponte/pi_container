@@ -198,3 +198,21 @@
         $ docker container stop <container id>
         ```
     
+* PixLet docker setup: https://github.com/eyeats/pixlet-docker/blob/main/README.md
+* Another Pixlet docker setup: https://github.com/tavdog/pixlet-docker/blob/main/dockerfile
+
+* To run: docker run --rm -it -p 8080:8080 pixlet pixlet serve examples/sunrise.star -i 0.0.0.0
+* Pass arguments to pixlet on the query string:
+
+load("render.star", "render")
+
+hello.star file:
+
+def main(config):
+    return render.Root(
+        child = render.Text(config.get("text") or "larry")
+    )
+
+pixlet serve hello.star
+
+http://127.0.0.1:8080/?text=jack
